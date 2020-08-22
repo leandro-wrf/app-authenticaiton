@@ -12,20 +12,22 @@ const Hash = use('Hash');
 trait('Test/ApiClient');
 trait('DatabaseTransactions');
 
-test('it should return JWT token when session created', async ({ client, assert }) => {
-  const user = await Factory
-    .model('App/Models/User')
-    .create({
-      email: 'leandro@gmail.com',
-      password: '123456'
-    });
+test('it should return JWT token when session created', async ({
+  client,
+  assert,
+}) => {
+  const user = await Factory.model('App/Models/User').create({
+    email: 'leandro@gmail.com',
+    password: '123456',
+  });
 
   const response = await client
     .post('/session')
     .send({
       email: 'leandro@gmail.com',
-      password: '123456'
-    }).end();
+      password: '123456',
+    })
+    .end();
 
   response.assertStatus(200);
   assert.exists(response.body.token);

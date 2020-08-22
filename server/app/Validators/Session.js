@@ -1,16 +1,16 @@
-'use strict'
+'use strict';
 
 class Session {
-  get rules () {
+  get rules() {
     return {
       email: 'required|email',
-      password: 'required'
-    }
+      password: 'required',
+    };
   }
 
-  get validateAll () {
-    return true
+  get validateAll() {
+    return true;
   }
 }
 
-module.exports = Session
+module.exports = Session;

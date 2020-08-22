@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 class SessionController {
   async store({ request, auth }) {
@@ -10,4 +10,4 @@ class SessionController {
   }
 }
 
-module.exports = SessionController
+module.exports = SessionController;

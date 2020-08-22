@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 /*
 |--------------------------------------------------------------------------
@@ -12,7 +12,7 @@
 */
 
 /** @type {import('@adonisjs/lucid/src/Factory')} */
-const Factory = use('Factory')
+const Factory = use('Factory');
 
 /** @type {import('@adonisjs/framework/src/Hash')} */
 const Hash = use('Hash');
@@ -22,6 +22,6 @@ Factory.blueprint('App/Models/User', async (faker, i, data) => {
     username: faker.name(),
     email: faker.email(),
     password: faker.password(),
-    ...data
-  }
-})
+    ...data,
+  };
+});

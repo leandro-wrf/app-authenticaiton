@@ -1,17 +1,17 @@
-'use strict'
+'use strict';
 
 class Register {
-  get rules () {
+  get rules() {
     return {
       username: 'required',
       email: 'required|email',
-      password: 'required'
-    }
+      password: 'required',
+    };
   }
 
-  get validateAll () {
-    return true
+  get validateAll() {
+    return true;
   }
 }
 
-module.exports = Register
+module.exports = Register;
