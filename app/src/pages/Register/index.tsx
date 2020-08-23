@@ -73,7 +73,11 @@ const Register: React.FC = () => {
 
             <InputBlock>
               <Fontisto name="locked" size={18} color="#999" />
-              <LastInput placeholder="Password" onChangeText={(text) => setPassword(text)}/>
+              <LastInput
+                placeholder="Password"
+                secureTextEntry={true}
+                onChangeText={(text) => setPassword(text)}
+              />
             </InputBlock>
           </GroupInput>
 

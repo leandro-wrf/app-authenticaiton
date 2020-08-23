@@ -60,6 +60,7 @@ const Login: React.FC = () => {
             <Fontisto name="locked" size={16} color="#999" />
             <LastInput 
               placeholder="Password"
+              secureTextEntry={true}
               onChangeText={(text) => setPassword(text)}
             />
           </InputBlock>
