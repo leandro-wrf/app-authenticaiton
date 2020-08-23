@@ -5,20 +5,19 @@ export const Container = styled.View`
   background-color: #fff;
 
   flex: 1;
-  margin-top: ${Constants.statusBarHeight}px;
 `;
 
 export const Title = styled.Text`
-  margin-top: 64px;
-
-  font-size: 32px;
-  font-weight: bold;
+  margin-top: 124px;
 
   text-align: center;
+
+  font-size: 32px;
+  font-family: Ubuntu_700Bold;
 `;
 
 export const ContainerInputButton = styled.View`
-  margin-top: 80px;
+  margin-top: 60px;
 
   flex: 1;
   flex-direction: row;
@@ -33,11 +32,12 @@ export const GroupInput = styled.View`
   border-top-right-radius: 120px;
   border-bottom-right-radius: 120px;
 
-  elevation: 4;
+  border-width: 1px;
+  border-color: #999;
 `;
 
 export const InputBlock = styled.View`
-  padding-left: 16px;
+  padding-left: 24px;
 
   flex-direction: row;
   align-items: center;
@@ -46,10 +46,13 @@ export const InputBlock = styled.View`
 export const Input = styled.TextInput`
   padding-left: 16px;
 
-  border-bottom-width: 1px;
-
   height: 75px;
   width: 75%;
+
+  border-bottom-width: 1px;
+  border-color: #999;
+
+  font-family: Ubuntu_700Bold;
 `;
 
 export const LastInput = styled.TextInput`
@@ -57,23 +60,11 @@ export const LastInput = styled.TextInput`
 
   height: 75px;
   width: 75%;
+
+  font-family: Ubuntu_700Bold;
 `
 
-export const ButtonLogin = styled.TouchableOpacity`
-   background-color: blue;
-
-   height: 80px;
-   width: 80px;
-
-   left: -50px;
-
-   border-radius: 50px;
-
-   justify-content: center;
-   align-items: center;
-   
-   elevation: 4;
-`;
+export const ButtonLogin = styled.TouchableOpacity``;
 
 export const ContainerButtonBottom = styled.View`
   margin-top: 32px;
@@ -83,6 +74,8 @@ export const ContainerButtonBottom = styled.View`
 `;
 
 export const Button = styled.TouchableOpacity`
+  margin-left: -5px;
+
   padding-left: 24px;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -97,5 +90,5 @@ export const Button = styled.TouchableOpacity`
 
 export const ButtonText = styled.Text`
   font-size: 24px;
-  font-weight: bold;
+  font-family: Ubuntu_700Bold;
 `

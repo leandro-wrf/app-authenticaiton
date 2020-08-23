@@ -1,7 +1,7 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 
-import Login from '../pages/SignIn';
+import Login from '../pages/Login';
 import Register from '../pages/Register';
 
 const { Navigator, Screen } = createStackNavigator();
@@ -9,6 +9,9 @@ const { Navigator, Screen } = createStackNavigator();
 const AuthRoutes: React.FC = () => (
   <Navigator
     headerMode="none"
+    screenOptions={{
+      animationEnabled: false,
+    }}
   >
     <Screen name="Login" component={Login} />
     <Screen name="Register" component={Register} />

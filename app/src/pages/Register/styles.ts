@@ -5,17 +5,18 @@ export const Container = styled.View`
   background-color: #fff;
 
   flex: 1;
-  margin-top: ${Constants.statusBarHeight}px;
 `;
 
 export const ContainerButtonTop = styled.View`
-  margin-top: 32px;
+  margin-top: 96px;
   margin-bottom: 64px;
 
   align-items: flex-end;
 `;
 
 export const Button = styled.TouchableOpacity`
+  margin-right: -5px;
+
   padding-left: 48px;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -30,14 +31,14 @@ export const Button = styled.TouchableOpacity`
 
 export const ButtonText = styled.Text`
   font-size: 24px;
-  font-weight: bold;
+  font-family: Ubuntu_700Bold;
 `
 
 export const Title = styled.Text`
-  font-size: 32px;
-  font-weight: bold;
-
   text-align: center;
+
+  font-size: 32px;
+  font-family: Ubuntu_700Bold;
 `;
 
 export const ContainerInputButton = styled.View`
@@ -52,12 +53,12 @@ export const GroupInput = styled.View`
 
   border-top-right-radius: 120px;
   border-bottom-right-radius: 120px;
-
-  elevation: 4;
+  border-width: 1px;
+  border-color: #999;
 `;
 
 export const InputBlock = styled.View`
-  padding-left: 8px;
+  padding-left: 16px;
 
   flex-direction: row;
   align-items: center;
@@ -66,10 +67,14 @@ export const InputBlock = styled.View`
 export const Input = styled.TextInput`
   padding-left: 16px;
 
-  border-bottom-width: 1px;
-
   height: 60px;
   width: 75%;
+
+  border-bottom-width: 1px;
+  border-color: #999;
+  
+
+  font-family: Ubuntu_700Bold;
 `;
 
 export const LastInput = styled.TextInput`
@@ -77,20 +82,8 @@ export const LastInput = styled.TextInput`
 
   height: 60px;
   width: 75%;
+
+  font-family: Ubuntu_700Bold;
 `
 
-export const ButtonRegister = styled.TouchableOpacity`
-   background-color: blue;
-
-   height: 80px;
-   width: 80px;
-
-   left: -50px;
-
-   border-radius: 50px;
-
-   justify-content: center;
-   align-items: center;
-   
-   elevation: 4;
-`;
+export const ButtonRegister = styled.TouchableOpacity``;
